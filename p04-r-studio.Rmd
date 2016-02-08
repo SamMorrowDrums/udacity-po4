@@ -1,0 +1,120 @@
+White Wine Data Exploration
+========================================================
+_by Sam Morrow_
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, packages}
+# Load all of the packages that you end up using
+# in your analysis in this code chunk.
+
+# Notice that the parameter "echo" was set to FALSE for this code chunk.
+# This prevents the code from displaying in the knitted HTML output.
+# You should set echo=FALSE for all code chunks in your file.
+
+library(ggplot2)
+```
+
+```{r echo=FALSE, Load_the_Data}
+# Load the Data
+wine <- read.csv('~/src/github.com/sammorrowdrums/udacity-po4/wineQualityWhites.csv')
+summary(wine)
+```
+
+# Univariate Plots Section
+```{r echo=FALSE, Univariate_Plots}
+qplot(data = wine, x = quality,  binwidth = 1)
+qplot(data = wine, x = alcohol, binwidth = 0.2,
+      xlab = "Alcohol", ylab = "Count")
+```
+
+# Univariate Analysis
+
+### What is the structure of your dataset?
+The data is very clean, and is ordered into rows with single observations featuring:
+  - Fixed Acidity
+  - Volatile Acidity
+  - Citric Acid
+  - Residual Sugar
+  - Chlorides
+  - Free Sulfer Dioxide
+  - Total Sulfer Dioxide
+  - Density
+  - pH
+  - Sulphates
+  - Alcohol
+  - Quality
+  
+All variables are measured, except for quality, which has been gauged by at least 3 experts.
+### What is/are the main feature(s) of interest in your dataset?
+I'm most interested in looking at the wine quality, and how various parameters affect it. I'm particularly interested in in the modality. I can imagine that there are quality wines that are, for examle sweet and rated highly, and less sweet and rated highly. The question is whether there are bi-modal / tri-modal distributions, or whether there are more.
+### What other features in the dataset do you think will help support your investigation into your feature(s) of interest?
+Alcohol, acidity measurements, sugar, chlorides and sulphates all potentially affect the perception of quality and hopefully the corellations will be strong enough to verify my findings.
+
+
+### Did you create any new variables from existing variables in the dataset?
+
+
+
+### Of the features you investigated, were there any unusual distributions? Did you perform any operations on the data to tidy, adjust, or change the form of the data? If so, why did you do this?
+
+
+
+# Bivariate Plots Section
+```{r echo=FALSE, Bivariate_Plots}
+
+```
+
+# Bivariate Analysis
+
+### Talk about some of the relationships you observed in this part of the investigation. How did the feature(s) of interest vary with other features in the dataset?
+
+### Did you observe any interesting relationships between the other features (not the main feature(s) of interest)?
+
+### What was the strongest relationship you found?
+
+
+
+
+# Multivariate Plots Section
+
+```{r echo=FALSE, Multivariate_Plots}
+
+```
+
+# Multivariate Analysis
+
+### Talk about some of the relationships you observed in this part of the investigation. Were there features that strengthened each other in terms of looking at your feature(s) of interest?
+
+### Were there any interesting or surprising interactions between features?
+
+### OPTIONAL: Did you create any models with your dataset? Discuss the strengths and limitations of your model.
+
+------
+
+# Final Plots and Summary
+
+### Plot One
+```{r echo=FALSE, Plot_One}
+
+```
+
+### Description One
+
+
+### Plot Two
+```{r echo=FALSE, Plot_Two}
+
+```
+
+### Description Two
+
+
+### Plot Three
+```{r echo=FALSE, Plot_Three}
+
+```
+
+### Description Three
+
+------
+
+# Reflection
