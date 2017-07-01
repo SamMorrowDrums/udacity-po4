@@ -1,0 +1,6 @@
+Sample Wine Project: https://gcmsrc.github.io/red_wine.html
+Sample Diamonds Project: https://s3.amazonaws.com/udacity-hosted-downloads/ud651/diamondsExample.html
+Factors in R https://www.stat.berkeley.edu/~s133/factors.html
+GGplot info: http://ggplot2.tidyverse.org/
+General R info: https://www.r-project.org/
+
